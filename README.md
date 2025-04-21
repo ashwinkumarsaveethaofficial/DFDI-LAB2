@@ -7,8 +7,8 @@ To analyze the internal disk structure of a disk image using Sleuth Kit tools an
   ●	Hardware: Personal Computer (PC)
 
 ```
-Register Number: 212222040121
-Name: Praveen V
+Register Number: 212222040020
+Name: Ashwinkumar S
 ```
 
 ## DESIGN STEPS:
@@ -28,17 +28,20 @@ Sleuth Kit Disk Analysis Commands
 ### Step1:
 
   ●	Run command prompt as administrator
-  ![image](https://github.com/user-attachments/assets/c6e03690-2da1-453d-96c4-30dc60274c1d)
+![Screenshot (195)](https://github.com/user-attachments/assets/d2ec88a3-c76c-49f5-a20b-4b9a67d80ab7)
+
 
 ### Step2:
 
   ●	Verify Sleuthkit is installed.
-  ![image](https://github.com/user-attachments/assets/504edd66-9700-490f-b6c5-878d5ccba681)
+![Screenshot 2025-04-21 175410](https://github.com/user-attachments/assets/a61b9443-66a2-46b9-9034-868b7db94f7f)
+
 
 ### Step3:
 
   ●	Navigate to the binary file of Sleuthkit in command prompt: 
-  ![image](https://github.com/user-attachments/assets/5e792732-51f0-4b7f-b299-cc21699104e8)
+![image](https://github.com/user-attachments/assets/b10dbd6e-360e-4134-ae28-10f3ab45696d)
+
 
 ## PROCEDURE:
 ## ANALYSE THE FILE USING SLEUTHKIT TOOL:
@@ -48,7 +51,8 @@ Sleuth Kit Disk Analysis Commands
   
   ●	Command:  istat.exe -f filetype “file path” <inode number>
   
-  ![image](https://github.com/user-attachments/assets/39128d45-4178-478e-857b-d6ad4a927c59)
+![image](https://github.com/user-attachments/assets/f415c356-b0cf-43a0-8b95-d677dc8f75c4)
+
   #### OUTPUT SUMMARY:
   ●	Type: Directory
   
@@ -65,7 +69,8 @@ Sleuth Kit Disk Analysis Commands
   
   ●	Command:  istat.exe -f filetype “file path” <inode number>
   
-  ![image](https://github.com/user-attachments/assets/93b77dd5-021d-404d-b6d8-4e04f4599022)
+ ![image](https://github.com/user-attachments/assets/b1a26d0f-05c9-4d66-ae0c-28b7395a0077)
+
 
   #### OUTPUT SUMMARY:
   
@@ -83,7 +88,8 @@ Sleuth Kit Disk Analysis Commands
   
   ●	Command:  istat.exe -f filetype “file path” <inode number>
   
-  ![image](https://github.com/user-attachments/assets/ad0a968c-7359-4e75-90c0-1df182c3fad8)
+ ![image](https://github.com/user-attachments/assets/2e6718c7-a152-4517-8216-f8ba4942997f)
+
 
   #### OUTPUT SUMMARY:
   
@@ -105,8 +111,8 @@ Sleuth Kit Disk Analysis Commands
   
   ●	Command:  icat.exe -f filetype “file path” <inode number>
   
-  ![image](https://github.com/user-attachments/assets/5cf65056-bff0-4ecc-b566-a7b8910187b2)
-  ![image](https://github.com/user-attachments/assets/fda1fc66-6673-43e5-9ece-e0bdb735ea34)
+![image](https://github.com/user-attachments/assets/54963c75-19d0-4e80-8164-a3c8b9640fcf)
+ ![image](https://github.com/user-attachments/assets/fda1fc66-6673-43e5-9ece-e0bdb735ea34)
 
   #### OUTPUT SUMMARY:
   The command retrieves the contents of a VMware virtual machine configuration file (Metasploitable.vmx). This file defines how the virtual machine is set up, including:
@@ -127,8 +133,9 @@ Sleuth Kit Disk Analysis Commands
   ●	Use fsstat to view file system metadata of the ISO image.
   
   ●	Command:  fsstat -f filetype “file path”
-  ![image](https://github.com/user-attachments/assets/a6065f77-74fa-4507-bd57-85459da5f388)
-  ![image](https://github.com/user-attachments/assets/e93f8c16-c8fd-4e34-8bb2-617a76d9261f)
+ ![image](https://github.com/user-attachments/assets/d6d068e7-0479-4f85-a67d-a4c4e56496fa)
+![image](https://github.com/user-attachments/assets/e0777b90-79ec-4994-bae0-348452f29882)
+
   
   #### OUTPUT SUMMARY:
   PRIMARY VOLUME DESCRIPTOR 1 File System Information:
@@ -166,7 +173,7 @@ Sleuth Kit Disk Analysis Commands
   ●	Use fls to view directory structure.
   
   ●	Command:  fls -f filetype -r  “file path”
-  ![image](https://github.com/user-attachments/assets/4eec2350-f448-4655-ba1f-da3ef3cb0e68)
+ ![image](https://github.com/user-attachments/assets/7548eaa1-312a-4a4d-b43c-4138b92739f3)
 
 
   #### OUTPUT SUMMARY:
@@ -192,7 +199,8 @@ Sleuth Kit Disk Analysis Commands
   ●	Use img_stat – Sleuth Kit utility for viewing image file metadata.
   
   ●	Command:  img_stat  “file path”
-  ![image](https://github.com/user-attachments/assets/2877e39b-a09e-4361-a7fc-b6c03fce6346)
+ ![image](https://github.com/user-attachments/assets/3e50ddad-4fb7-4e61-be29-197bb1b5d276)
+
 
   #### OUTPUT SUMMARY:
   •	Image Type: raw
